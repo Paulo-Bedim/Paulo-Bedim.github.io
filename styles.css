@@ -1,0 +1,117 @@
+/* Geral */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  /* Cabeçalhos */
+  h1 {
+    text-align: center;
+    color: #0077cc;
+    margin-top: 20px;
+  }
+  
+  /* Parágrafos */
+  p {
+    max-width: 800px;
+    margin: 10px auto;
+    line-height: 1.8;
+    text-align: center;
+  }
+  
+  /* Botões de navegação */
+  a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #0077cc;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  a:hover {
+    background-color: #00c4cc;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Contêiner centralizado para botões */
+  .center-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    margin-top: 20px; /* Espaçamento acima do botão */
+  }
+  
+  /* Tabelas (aplicável à página inicial) */
+  table {
+    border-collapse: collapse;
+    margin: 20px auto;
+    width: 80%;
+    background-color: #fff;
+  }
+  
+  table th, table td {
+    border: 1px solid #000000;
+    padding: 10px;
+    text-align: center;
+    color: #000; /* Texto preto */
+  }
+  
+  table th {
+    background-color: #0077cc;
+    color: #fff; /* Texto branco apenas no cabeçalho */
+  }
+  
+  table td {
+    background-color: #f9f9f9;
+  }
+  
+  /* Página do portfólio */
+  .portfolio-container {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: flex-start; /* Alinha os itens no topo */
+    gap: 20px; /* Espaçamento entre a foto e a lista */
+    margin: 20px auto;
+    max-width: 800px;
+  }
+  
+  /* Foto de perfil */
+  .profile-picture img {
+    width: 150px; /* Largura da foto */
+    height: 150px; /* Altura da foto */
+    border-radius: 50%; /* Deixa a foto redonda */
+    object-fit: cover; /* Garante que a foto se ajuste ao tamanho */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra */
+    border: 2px solid #0077cc; /* Borda azul */
+  }
+  
+  /* Lista de projetos */
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul li {
+    background-color: #28293e;
+    margin: 10px 0;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  ul li:hover {
+    background-color: #0077cc;
+    transform: scale(1.05);
+  }
+  
