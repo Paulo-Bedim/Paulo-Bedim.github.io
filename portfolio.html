@@ -3,21 +3,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio - Paulo Neto</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="portfolio.css">
 </head>
 <body>
   <h1>Meu Portfólio - Paulo Neto</h1>
   <p>Bem-vindo ao meu portfólio!</p>
-  <h2>Meus Projetos</h2>
-  <ul id="lista-projetos">
-  <!-- Os projetos serão carregados aqui -->
-  </ul>
-  <script src="script.js"></script>
-  <div class="portfolio-container">
-    <div class="profile-picture">
-      <img src="eu.jpeg" alt="Foto de Paulo Neto">
-    </div>
-  </div>
+  <main>
+    <section class="projects-section">
+      <h2>Meus Projetos</h2>
+      <ul id="lista-projetos">
+        <!-- Projetos carregados via XML -->
+      </ul>
+    </section>
+
+    <section class="contact-section">
+      <h2>Entre em Contato</h2>
+        <form id="form-contato">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required>
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="assunto">Assunto:</label>
+          <input type="text" id="assunto" name="assunto" required>
+
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" required></textarea>
+
+          <button type="submit">Enviar</button>
+        </form>
+    </section>
+  </main>
+
+<script src="script.js"></script>
+
   <div class="center-container">
     <a href="index.html">Voltar para a página inicial</a>
   </div>

@@ -1,0 +1,105 @@
+/* Herda o estilo base do index e adiciona elementos específicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --primary-color: #2a2a72;
+    --secondary-color: #009ffd;
+    --accent-color: #4CAF50;
+    --text-color: #333;
+    --light-bg: #f9f9f9;
+    --dark-bg: #1a1a1a;
+    --transition: all 0.3s ease;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--light-bg);
+  }
+  
+  /* Header igual ao index */
+  header { /* ... mesmo estilo do index ... */ }
+  
+  /* Seção de Projetos */
+  #lista-projetos {
+    display: grid;
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
+  
+  #lista-projetos li {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: var(--transition);
+  }
+  
+  #lista-projetos li:hover {
+    transform: translateY(-3px);
+  }
+  
+  /* Formulário de Contato Moderno */
+  #form-contato {
+    max-width: 600px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  #form-contato label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  #form-contato input,
+  #form-contato textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1.5rem;
+    border: 2px solid #eee;
+    border-radius: 6px;
+    transition: var(--transition);
+  }
+  
+  #form-contato input:focus,
+  #form-contato textarea:focus {
+    border-color: var(--secondary-color);
+    outline: none;
+  }
+  
+  #form-contato button {
+    background: var(--primary-color);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  
+  #form-contato button:hover {
+    background: var(--secondary-color);
+  }
+  
+  /* Footer igual ao index */
+  footer { /* ... mesmo estilo do index ... */ }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    #lista-projetos {
+      grid-template-columns: 1fr;
+    }
+    
+    #form-contato {
+      margin: 2rem 1rem;
+    }
+  }
