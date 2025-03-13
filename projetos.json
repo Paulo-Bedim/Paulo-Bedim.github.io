@@ -1,0 +1,18 @@
+[
+    {
+      "titulo": "Base de Dados em SQL",
+      "descricao": "Projeto de banco de dados com modelagem relacional.",
+      "status": "Feito"
+    },
+    {
+      "titulo": "Website: Nutrichef",
+      "descricao": "Site para um negócio de nutrição.",
+      "status": "Em progresso"
+    },
+    {
+      "titulo": "Sistema de Gestão Escolar",
+      "descricao": "Software para gerenciamento de alunos e professores.",
+      "status": "Planejado"
+    }
+  ]
+  
