@@ -2,11 +2,7 @@
 header("Content-Type: application/json");
 header("Access-Control-Allow-Origin: *");
 
-$host = "localhost"; 
-$user = "pauloneto1"; // Altere se necessário
-$pass = "password123";     // Altere se necessário
-$db = "portfolio";
-
+require_once 'db_connect.php';
 $conn = new mysqli($host, $user, $pass, $db);
 
 if ($conn->connect_error) {
