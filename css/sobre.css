@@ -1,0 +1,89 @@
+/* sobre.css */
+.sobre-container {
+    max-width: 1200px;
+    margin: 100px auto 0;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 3rem;
+  }
+  
+  .perfil {
+    text-align: center;
+    position: sticky;
+    top: 100px;
+    height: fit-content;
+  }
+  
+  .foto-perfil {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--primary-color);
+    margin-bottom: 1.5rem;
+  }
+  
+  .redes-sociais {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .redes-sociais a {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    transition: var(--transition);
+  }
+  
+  .redes-sociais a:hover {
+    color: var(--secondary-color);
+    transform: translateY(-3px);
+  }
+  
+  .descricao {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+  }
+  
+  .habilidades {
+    columns: 2;
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+  }
+  
+  .habilidades li {
+    padding: 0.5rem;
+    background: var(--light-bg);
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+  }
+  
+  .contato-section {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  }
+  
+  @media (max-width: 768px) {
+    .sobre-container {
+      grid-template-columns: 1fr;
+      margin-top: 80px;
+    }
+    
+    .perfil {
+      position: static;
+      text-align: center;
+    }
+    
+    .foto-perfil {
+      width: 200px;
+      height: 200px;
+    }
+  }

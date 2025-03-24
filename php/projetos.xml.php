@@ -1,14 +1,14 @@
 <?php
-header("Content-Type: text/xml");
-header("Access-Control-Allow-Origin: *");
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+// Restante do código...
+header("Access-Control-Allow-Headers: Content-Type");
+header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
 
 require_once 'db_connect.php';
-
-$conn = new mysqli($host, $user, $pass, $db);
-
-if ($conn->connect_error) {
-    die("Erro de conexão");
-}
 
 // Consulta atualizada para incluir id e imagem
 $sql = "SELECT id, titulo, descricao, status, imagem FROM projetos";

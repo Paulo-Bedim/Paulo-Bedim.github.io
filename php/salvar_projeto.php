@@ -3,11 +3,6 @@ header("Content-Type: application/json");
 header("Access-Control-Allow-Origin: *");
 
 require_once 'db_connect.php';
-$conn = new mysqli($host, $user, $pass, $db);
-
-if ($conn->connect_error) {
-    die(json_encode(["mensagem" => "Falha na conexão com o banco de dados."]));
-}
 
 // Processar upload de imagem
 $imagem = '';

@@ -225,3 +225,61 @@ footer {
     margin-top: 120px;
   }
 }
+
+/* Estilos para Projetos */
+.projects-section {
+  margin: 3rem 0;
+}
+
+#lista-projetos {
+  display: grid;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+}
+
+.projeto-item {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.projeto-item:hover {
+  transform: translateY(-5px);
+}
+
+.projeto-imagem {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 3px solid var(--primary-color);
+}
+
+.projeto-info {
+  padding: 1.5rem;
+}
+
+.projeto-status {
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.projeto-status.feito {
+  background: #4CAF50;
+  color: white;
+}
+
+.projeto-status.em-progresso {
+  background: #FFC107;
+  color: black;
+}
+
+.projeto-status.planejado {
+  background: #9E9E9E;
+  color: white;
+}
