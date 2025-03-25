@@ -1,0 +1,233 @@
+/* Reset básico e variáveis */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --primary-color: #2a2a72;
+    --secondary-color: #009ffd;
+    --accent-color: #4CAF50;
+    --text-color: #333;
+    --light-bg: #f9f9f9;
+    --dark-bg: #1a1a1a;
+    --transition: all 0.3s ease;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--light-bg);
+  }
+  
+  /* Header */
+  header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  
+  .nav-links li a {
+    color: rgba(255,255,255,0.9);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: var(--transition);
+  }
+  
+  .nav-links li a:hover,
+  .nav-links li a.active {
+    background: rgba(255,255,255,0.2);
+  }
+  
+  /* Conteúdo principal */
+  main {
+    margin-top: 100px;
+    padding: 2rem 1.5rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Seção de Introdução */
+  .intro {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 4rem 2rem;
+    background: linear-gradient(rgba(42,42,114,0.8), rgba(0,159,253,0.8)),
+                url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1352&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+  
+  .intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  }
+  
+  .intro p {
+    font-size: 1.1rem;
+  }
+  
+  /* Seção de Conteúdo do Curso */
+  .curso-conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    margin-bottom: 3rem;
+  }
+  
+  .curso-conteudo .conteudo-item {
+    margin-bottom: 1.5rem;
+  }
+  
+  .curso-conteudo h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: var(--primary-color);
+  }
+  
+  .curso-conteudo ol {
+    margin-left: 1.5rem;
+    line-height: 1.8;
+  }
+  
+  .curso-conteudo ol li {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  
+  .curso-conteudo p {
+    font-size: 1rem;
+    text-align: justify;
+    line-height: 1.8;
+  }
+  
+  /* Footer */
+  footer {
+    background: var(--dark-bg);
+    color: white;
+    padding: 3rem 2rem;
+    margin-top: 5rem;
+    text-align: center;
+  }
+  
+  .contato {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .contato p {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 2rem 0;
+  }
+  
+  .social-links a {
+    color: white;
+    font-size: 1.8rem;
+    transition: var(--transition);
+    padding: 0.5rem;
+    border-radius: 50%;
+  }
+  
+  .social-links a:hover {
+    color: var(--secondary-color);
+    transform: translateY(-3px);
+  }
+  
+  .copyright {
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    
+    .nav-links {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    main {
+      margin-top: 120px;
+    }
+    
+    .intro {
+      padding: 2rem 1rem;
+    }
+    
+    .intro h1 {
+      font-size: 2rem;
+    }
+    
+    .contato {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo {
+      font-size: 1.5rem;
+    }
+    
+    .nav-links li a {
+      font-size: 0.9rem;
+      padding: 0.3rem 0.7rem;
+    }
+  }
+  

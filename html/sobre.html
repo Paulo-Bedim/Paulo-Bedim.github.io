@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
   <link rel="stylesheet" href="../css/sobre.css">
   <link rel="stylesheet" href="../css/index.css">
 </head>
+
 <body>
   <header>
     <nav>
@@ -16,9 +18,10 @@
       <div class="nav-links">
         <a href="../index.html">Home</a>
         <a href="portfolio.html">Projetos</a>
-        <a href="sobre.html">Sobre Mim</a>
+        <a href="sobre.html" class="active">Sobre Mim</a>
         <a href="curso.html">Curso</a>
       </div>
+      
     </nav>
   </header>
 
@@ -35,12 +38,13 @@
 
       <div class="sobre-conteudo">
         <h1 class="page-title">Sobre Mim</h1>
-        
+
         <div class="descricao">
-          <p>Olá! Sou Paulo Neto, estudante de Gestão e Programação de Sistemas Informáticos na EPB - Escola Profissional de Braga.</p>
-          
+          <p>Olá! Sou Paulo Neto, estudante de Gestão e Programação de Sistemas Informáticos na EPB - Escola
+            Profissional de Braga.</p>
+
           <p>(Texto a desenvolver)</p>
-          
+
           <h2>Habilidades Técnicas</h2>
           <ul class="habilidades">
             <li>HTML5 & CSS3</li>
@@ -52,20 +56,20 @@
 
         <section class="contato-section">
           <h2>Entre em Contato</h2>
-          <form id="form-contato">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-            <br><br>
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
-            <br><br>
-            <label for="assunto">Assunto:</label>
-            <input type="text" id="assunto" name="assunto" required>
-            <br><br>
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" required></textarea>
-
-            <button type="submit">Enviar</button>
+          <form id="form-contato" action="salvar_mensagem.php" method="POST">
+            <div class="contact">
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" name="nome" required>
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" name="email" required>
+              <label for="assunto">Assunto:</label>
+              <input type="text" id="assunto" name="assunto" required>
+            </div>
+            <div class="message">
+              <label for="mensagem">Mensagem:</label>
+              <textarea id="mensagem" name="mensagem" required></textarea>
+              <button type="submit">Enviar</button>
+            </div>
           </form>
         </section>
       </div>
@@ -77,16 +81,17 @@
       <p>📧 paulocbneto51@gmail.com</p>
       <p>📱 +351 912 345 678</p>
     </div>
-    
+
     <div class="social-links">
       <a href="https://www.instagram.com/pn_bedim/" target="_blank"><i class="fab fa-instagram"></i></a>
       <a href="https://github.com/Paulo-Bedim" target="_blank"><i class="fab fa-github"></i></a>
       <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
     </div>
-    
+
     <p class="copyright">© 2025 Paulo Neto. Todos os direitos reservados</p>
   </footer>
 
   <script src="../js/script.js"></script>
 </body>
+
 </html>

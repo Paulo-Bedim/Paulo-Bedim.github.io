@@ -47,13 +47,18 @@ function carregarProjetos() {
 function enviarMensagem() {
   let formData = new FormData(document.getElementById("form-contato"));
 
-  fetch("salvar_mensagem.php", {
+  fetch("../php/salvar_mensagem.php", { // Ajuste o caminho se necessário
     method: "POST",
     body: formData
   })
   .then(response => response.json())
   .then(data => {
-    alert(data.success || data.error);
+    if (data.success) {
+      alert("Mensagem enviada com sucesso!");
+      document.getElementById("form-contato").reset(); // Limpa o formulário após envio
+    } else {
+      alert("Erro ao enviar mensagem: " + (data.error || "Tente novamente."));
+    }
   })
   .catch(error => console.error("Erro ao enviar mensagem:", error));
 }
